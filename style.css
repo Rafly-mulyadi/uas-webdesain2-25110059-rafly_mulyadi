@@ -134,19 +134,59 @@ body {
 .bg-success-light { background-color: rgba(76, 175, 80, 0.12); }
 .bg-brown-light { background-color: var(--light-brown-bg); }
 
-/* MENU PILLS */
+/* ================= PERBAIKAN WARNA TEKS NAV PILLS (KATEGORI MENU) ================= */
 .nav-pills .nav-link {
-    border: 2px solid var(--accent-brown);
-    color: var(--accent-brown);
+    border: 2px solid var(--accent-brown) !important;
+    color: var(--accent-brown) !important; /* Diubah jadi cokelat pekat agar kelihatan kontras rapi */
+    background-color: transparent !important;
     margin: 0 6px;
     border-radius: 30px;
+    padding: 10px 24px !important;
     transition: all 0.3s ease;
 }
 
-.nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+.nav-pills .nav-link:hover {
     background-color: var(--accent-brown) !important;
-    border-color: var(--accent-brown);
-    color: #fff !important;
+    border-color: var(--accent-brown) !important;
+    color: #fff !important; /* Tulisan berubah putih saat kursor masuk */
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--accent-brown) !important;
+    border-color: var(--accent-brown) !important;
+    color: #fff !important; /* Tetap putih solid saat aktif diklik */
+}
+
+/* ================= NEW FEATURE: CAROUSEL BANNER MENU TERLARIS ================= */
+.promo-carousel {
+    max-width: 850px;
+    margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.promo-slide-wrapper {
+    height: 380px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center; /* Pakai ini */
+}
+.promo-text-box {
+    padding: 30px 20px 40px 20px;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    text-align: center;
+}
+
+.max-w-600 { max-width: 600px; }
+
+/* Responsivitas Layar Handphone */
+@media (max-width: 768px) {
+    .promo-slide-wrapper { height: 280px; }
+    .promo-text-box h3 { font-size: 1.4rem; }
+    .promo-text-box p { font-size: 0.8rem; }
 }
 
 /* CARDS MENU */
