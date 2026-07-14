@@ -5,7 +5,7 @@
 
 $(document).ready(function() {
     
-    // 1. FITUR BARU: LIVE REAL-TIME DETEKSI STATUS BUKA/TUTUP WARUNG
+    // 1. LIVE REAL-TIME DETEKSI STATUS BUKA/TUTUP WARUNG
     function checkTokoStatus() {
         var now = new Date();
         var hours = now.getHours();
@@ -20,7 +20,7 @@ $(document).ready(function() {
     }
     checkTokoStatus(); // Jalankan fungsi saat web dibuka
 
-    // 2. FITUR BARU: KALKULATOR INTERAKTIF SIMULASI KATERING
+    // 2. KALKULATOR INTERAKTIF SIMULASI KATERING
     function hitungKatering() {
         var hargaMenu = parseInt($('#calcMenu').val());
         var jumlahPorsi = parseInt($('#calcJumlah').val());
@@ -86,7 +86,6 @@ $(document).ready(function() {
             var textWA = "Halo Admin Bakso Laras, saya *" + nama + "*. Ingin menanyakan perihal *" + keperluan + "*:\n\n_\"" + pesan + "\"_";
             var encodeText = encodeURIComponent(textWA);
             
-            // Menggunakan nomor yang valid dari pengaturan Ledger sebelumnya
             window.open("https://wa.me/6282177845467?text=" + encodeText, '_blank');
             btn.prop('disabled', false).html('Kirim ke WhatsApp <i class="fab fa-whatsapp ml-2"></i>');
         }, 1000);
