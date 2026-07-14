@@ -1,77 +1,268 @@
-/* Custom CSS Tema Kuliner Hangat (Bakso Laras Pekanbaru) */
+/* Custom CSS Tema Premium Kuliner Warm (Deep Maroon & Warm Gold) */
 :root {
-    --primary-color: #d32f2f;
-    --secondary-color: #f57c00;
-    --dark-color: #3e2723;
-    --light-color: #fffde7;
+    --primary-color: #b71c1c;      /* Deep Maroon */
+    --secondary-color: #ff9800;    /* Warm Amber/Gold */
+    --dark-color: #21110f;         /* Elegant Dark Coffee */
+    --light-color: #fffdec;        /* Warm Vanilla White */
+    --gray-light: #f8f9fa;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
-    color: var(--dark-color);
+    background-color: var(--gray-light);
+    color: #4a3e3d;
 }
 
+/* Typography Custom */
+.text-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* NAVBAR DESIGN */
 .navbar {
     background-color: var(--dark-color) !important;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    transition: all 0.3s;
 }
 
-.navbar-brand, .nav-link {
-    color: #fff !important;
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #f1f1f1 !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin: 0 8px;
+    transition: color 0.3s;
 }
 
 .nav-link:hover, .nav-item.active .nav-link {
     color: var(--secondary-color) !important;
-    font-weight: bold;
 }
 
-/* Jumbotron Hero Styling */
-.jumbotron {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+/* HERO SECTION / JUMBOTRON WITH WAVE EFFECT */
+.hero-section {
+    position: relative;
+    background: linear-gradient(rgba(33, 17, 15, 0.75), rgba(33, 17, 15, 0.75)), 
                 url('https://images.unsplash.com/photo-1541518763669-27fef04b14ea?q=80&w=1200') no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
+    padding: 140px 0 160px 0;
     color: #fff;
-    padding: 100px 0;
-    margin-bottom: 0;
+    overflow: hidden;
 }
 
+.hero-content {
+    z-index: 2;
+    position: relative;
+}
+
+.max-w-600 {
+    max-width: 650px;
+}
+
+.wave-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-container svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+/* CUSTOM BUTTONS */
 .btn-custom {
     background-color: var(--primary-color);
-    color: white;
+    color: white !important;
     border: none;
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-custom:hover {
     background-color: var(--secondary-color);
-    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(255, 152, 0, 0.3);
 }
 
-/* SPA Section Display Rule */
+.btn-outline-light:hover {
+    color: var(--dark-color) !important;
+}
+
+/* SECTION TITLES */
+.section-title {
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: var(--dark-color);
+}
+
+.title-underline {
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 12px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* FEATURE CARDS (KEUNGGULAN) */
+.feature-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(33, 17, 15, 0.04);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.01);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(33, 17, 15, 0.08);
+}
+
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.bg-success-light { background-color: rgba(40, 167, 69, 0.1); }
+.bg-warning-light { background-color: rgba(255, 152, 0, 0.1); }
+.bg-danger-light { background-color: rgba(183, 28, 28, 0.1); }
+
+/* BOOTSTRAP PILLS MODERN FOR MENU */
+.nav-pills .nav-link {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    margin: 0 6px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+/* CARDS MENU PREMIUM */
+.card-menu {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-menu:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(33, 17, 15, 0.12) !important;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card-menu:hover .img-container img {
+    transform: scale(1.08);
+}
+
+.badge-price {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 6px 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card-description {
+    font-size: 0.9rem;
+    height: 60px;
+    overflow: hidden;
+}
+
+/* CONTACT INPUTS */
+.custom-input {
+    background-color: #fcfcfc;
+    border: 1.5px solid #eaeaea;
+    padding: 12px 20px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+.custom-input:focus {
+    background-color: #fff;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.1);
+}
+
+/* ABOUT SECTION STYLES */
+.rounded-xl {
+    border-radius: 30px;
+}
+
+.border-gold {
+    border: 5px solid #fff;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.alert-custom-warning {
+    background-color: #fff3cd;
+    border: none;
+    border-left: 5px solid var(--secondary-color);
+}
+
+/* SPA VISIBILITY RULES & ANIMASI FADE IN */
 .page-section {
     display: none;
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .page-section.active-page {
     display: block;
 }
 
-/* Cards Animation */
-.card-menu {
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s;
+.animate-fade {
+    animation: fadeIn 0.6s ease-in-out forwards;
 }
 
-.card-menu:hover {
-    transform: translateY(-5px);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+/* FOOTER DESIGN */
 footer {
     background-color: var(--dark-color);
     color: #fff;
-    padding: 20px 0;
+    border-top: 5px solid var(--secondary-color);
 }
