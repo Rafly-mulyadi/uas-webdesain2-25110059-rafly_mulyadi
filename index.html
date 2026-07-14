@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakso Laras - Kuliner Bakso & Mie Ayam Premium Pekanbaru</title>
+    <title>Bakso Laras - Kuliner Premium Pekanbaru</title>
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Google Fonts: Playfair Display (Elegant) & Poppins (Modern Clean) -->
+    <!-- Google Fonts: Playfair Display & Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS Eksternal -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -19,25 +19,17 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand font-weight-bold" href="#" data-page="home">
-                <i class="fas fa-hotdog text-warning mr-2"></i>BAKSO <span class="text-warning">LARAS</span>
+                <i class="fas fa-hotdog text-success-hint mr-2"></i>BAKSO <span class="text-success-hint">LARAS</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active" id="nav-home">
-                        <a class="nav-link" href="#" data-page="home">Home</a>
-                    </li>
-                    <li class="nav-item" id="nav-menu">
-                        <a class="nav-link" href="#" data-page="menu">Menu</a>
-                    </li>
-                    <li class="nav-item" id="nav-tentang">
-                        <a class="nav-link" href="#" data-page="tentang">Tentang</a>
-                    </li>
-                    <li class="nav-item" id="nav-kontak">
-                        <a class="nav-link" href="#" data-page="kontak">Kontak</a>
-                    </li>
+                    <li class="nav-item active" id="nav-home"><a class="nav-link" href="#" data-page="home">Home</a></li>
+                    <li class="nav-item" id="nav-menu"><a class="nav-link" href="#" data-page="menu">Menu</a></li>
+                    <li class="nav-item" id="nav-tentang"><a class="nav-link" href="#" data-page="tentang">Tentang</a></li>
+                    <li class="nav-item" id="nav-kontak"><a class="nav-link" href="#" data-page="kontak">Kontak & Katering</a></li>
                 </ul>
             </div>
         </div>
@@ -45,24 +37,25 @@
 
     <!-- ================= HALAMAN HOME ================= -->
     <div id="home" class="page-section active-page animate-fade">
-        <!-- HERO BANNER MODERN DENGAN SEPARATOR GELOMBANG -->
         <div class="hero-section text-center">
             <div class="container hero-content">
-                <span class="badge badge-warning px-3 py-2 text-uppercase mb-3 font-weight-bold tracking-wider">Kuliner Asli Pekanbaru</span>
+                <!-- FITUR BARU: LIVE RECOGNITION JAM OPERASIONAL -->
+                <div id="live-status-badge" class="mb-3 d-inline-block"></div>
+                
                 <h1 class="display-3 font-weight-bold text-serif">Sensasi Bakso Sapi & Mie Ayam Lezat</h1>
-                <p class="lead text-light max-w-600 mx-auto">Menghadirkan resep warisan keluarga dengan cita rasa gurih alami yang menghangatkan suasana kuliner Anda.</p>
+                <p class="lead text-light max-w-600 mx-auto">Resep warisan keluarga dengan perpaduan kaldu sapi cokelat yang kaya rasa dan racikan sayur hijau segar alami.</p>
                 <div class="mt-4">
-                    <button class="btn btn-custom btn-lg font-weight-bold px-5 py-3 rounded-pill shadow-lg mr-md-3 mb-3 mb-md-0" data-page="menu">
+                    <button class="btn btn-custom btn-lg font-weight-bold px-5 py-3 rounded-pill mr-md-3 mb-3 mb-md-0" data-page="menu">
                         <i class="fas fa-utensils mr-2"></i> Eksplorasi Menu
                     </button>
-                    <button class="btn btn-outline-light btn-lg font-weight-bold px-5 py-3 rounded-pill" data-page="tentang">
-                        Pelajari Profil Kami
+                    <button class="btn btn-outline-light btn-lg font-weight-bold px-5 py-3 rounded-pill btn-hero-outline" data-page="tentang">
+                        Profil Kami
                     </button>
                 </div>
             </div>
-            <!-- Wave Divider SVG murni -->
+            <!-- Wave Divider -->
             <div class="wave-container">
-                <svg viewBox="0 0 1440 120" fill="#f8f9fa" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 1440 120" fill="#fcfaf2" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,120L1320,120C1200,120,960,120,720,120C480,120,240,120,120,120L0,120Z"></path>
                 </svg>
             </div>
@@ -76,30 +69,30 @@
             </div>
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <div class="feature-card text-center p-4">
-                        <div class="icon-wrapper bg-success-light text-success mb-4">
-                            <i class="fas fa-shield-alt fa-2x"></i>
+                    <div class="feature-card text-center p-5">
+                        <div class="icon-wrapper bg-success-light text-success-hint mb-4">
+                            <i class="fas fa-leaf fa-2x"></i>
                         </div>
-                        <h5 class="font-weight-bold">100% Halal & Higienis</h5>
-                        <p class="text-muted">Proses pengolahan dapur bersih dengan jaminan bahan baku bersertifikat halal.</p>
+                        <h5 class="font-weight-bold text-brown">100% Halal & Segar</h5>
+                        <p class="text-muted mb-0">Dipadukan dengan bumbu rempah pilihan dan sayuran hijau segar harian langsung dari petani.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <div class="feature-card text-center p-4">
-                        <div class="icon-wrapper bg-warning-light text-warning mb-4">
-                            <i class="fas fa-award fa-2x"></i>
+                    <div class="feature-card text-center p-5">
+                        <div class="icon-wrapper bg-brown-light text-brown mb-4">
+                            <i class="fas fa-meat fa-2x"></i>
                         </div>
-                        <h5 class="font-weight-bold">Daging Sapi Pilihan</h5>
-                        <p class="text-muted">Dibuat menggunakan daging sapi segar pilihan tanpa pengawet buatan.</p>
+                        <h5 class="font-weight-bold text-brown">Daging Sapi Asli</h5>
+                        <p class="text-muted mb-0">Komposisi daging sapi murni yang padat menghasilkan tekstur bakso cokelat alami yang kenyal gurih.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <div class="feature-card text-center p-4">
-                        <div class="icon-wrapper bg-danger-light text-danger mb-4">
-                            <i class="fas fa-tags fa-2x"></i>
+                    <div class="feature-card text-center p-5">
+                        <div class="icon-wrapper bg-success-light text-success-hint mb-4">
+                            <i class="fas fa-wallet fa-2x"></i>
                         </div>
-                        <h5 class="font-weight-bold">Harga Sangat Bersahabat</h5>
-                        <p class="text-muted">Cita rasa premium bintang lima dengan harga kaki lima yang bersahabat.</p>
+                        <h5 class="font-weight-bold text-brown">Harga Bersahabat</h5>
+                        <p class="text-muted mb-0">Kualitas hidangan premium setara bintang lima namun tetap ramah di dompet mahasiswa.</p>
                     </div>
                 </div>
             </div>
@@ -114,17 +107,10 @@
                 <div class="title-underline"></div>
             </div>
             
-            <!-- TABS PILIHAN KATEGORI -->
             <ul class="nav nav-pills justify-content-center mb-5" id="menuTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active font-weight-bold px-4 py-2" id="bakso-tab" data-toggle="pill" href="#bakso" role="tab">Bakso Sapi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold px-4 py-2" id="mie-tab" data-toggle="pill" href="#mie" role="tab">Mie Ayam</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold px-4 py-2" id="minum-tab" data-toggle="pill" href="#minum" role="tab">Minuman Segar</a>
-                </li>
+                <li class="nav-item"><a class="nav-link active font-weight-bold px-4 py-2" id="bakso-tab" data-toggle="pill" href="#bakso" role="tab">Bakso Sapi</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold px-4 py-2" id="mie-tab" data-toggle="pill" href="#mie" role="tab">Mie Ayam</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold px-4 py-2" id="minum-tab" data-toggle="pill" href="#minum" role="tab">Minuman Segar</a></li>
             </ul>
 
             <div class="tab-content" id="menuTabContent">
@@ -138,9 +124,9 @@
                                     <span class="badge-price">Rp 15.000</span>
                                 </div>
                                 <div class="card-body p-4">
-                                    <h5 class="font-weight-bold text-serif text-dark">Bakso Biasa</h5>
-                                    <p class="text-muted card-description">Bakso halus legendaris yang disajikan dengan siraman kuah kaldu sapi bening gurih asli.</p>
-                                    <button class="btn btn-outline-danger btn-block rounded-pill font-weight-bold btn-detail-trigger" data-toggle="modal" data-target="#detailMenuModal" data-nama="Bakso Biasa" data-desc="Satu porsi lengkap terdiri dari 5 butir bakso halus lembut, mie kuning/bihun, tahu cokelat empuk, taburan bawang goreng, dan daun seledri segar.">Lihat Detail Menu</button>
+                                    <h5 class="font-weight-bold text-serif card-menu-title">Bakso Biasa</h5>
+                                    <p class="text-muted card-description">Bakso halus legendaris yang disajikan dengan kuah cokelat kaldu sapi gurih dan seledri hijau.</p>
+                                    <button class="btn btn-outline-brown btn-block rounded-pill font-weight-bold btn-menu-detail" data-toggle="modal" data-target="#detailMenuModal" data-nama="Bakso Biasa" data-desc="Terdiri dari 5 butir bakso halus lembut, mie, tahu empuk, taburan bawang goreng, dan daun seledri segar.">Detail Menu</button>
                                 </div>
                             </div>
                         </div>
@@ -151,9 +137,9 @@
                                     <span class="badge-price">Rp 22.000</span>
                                 </div>
                                 <div class="card-body p-4">
-                                    <h5 class="font-weight-bold text-serif text-dark">Bakso Urat Jumbo</h5>
-                                    <p class="text-muted card-description">Bakso urat berukuran raksasa dengan tekstur kenyal kasar dan tetelan melimpah.</p>
-                                    <button class="btn btn-outline-danger btn-block rounded-pill font-weight-bold btn-detail-trigger" data-toggle="modal" data-target="#detailMenuModal" data-nama="Bakso Urat Jumbo" data-desc="Terdiri dari 1 butir bakso urat super besar, 2 bakso halus kecil, irisan tetelan sapi gurih, mie, bihun, sayur segar, dan kuah kaldu kental panas.">Lihat Detail Menu</button>
+                                    <h5 class="font-weight-bold text-serif card-menu-title">Bakso Urat Jumbo</h5>
+                                    <p class="text-muted card-description">Bakso urat berukuran besar bertekstur kasar berpadu dengan limpahan tetelan sapi gurih.</p>
+                                    <button class="btn btn-outline-brown btn-block rounded-pill font-weight-bold btn-menu-detail" data-toggle="modal" data-target="#detailMenuModal" data-nama="Bakso Urat Jumbo" data-desc="Terdiri dari 1 bakso urat super besar, 2 bakso kecil, irisan tetelan kental, mie, dan sayur sawi hijau.">Detail Menu</button>
                                 </div>
                             </div>
                         </div>
@@ -170,9 +156,9 @@
                                     <span class="badge-price">Rp 13.000</span>
                                 </div>
                                 <div class="card-body p-4">
-                                    <h5 class="font-weight-bold text-serif text-dark">Mie Ayam Biasa</h5>
-                                    <p class="text-muted card-description">Mie kenyal gurih buatan mandiri yang ditumpuk dengan topping tumisan ayam kecap kental.</p>
-                                    <button class="btn btn-outline-danger btn-block rounded-pill font-weight-bold btn-detail-trigger" data-toggle="modal" data-target="#detailMenuModal" data-nama="Mie Ayam Biasa" data-desc="Mie gandum segar olahan sendiri lengkap dengan semur ayam manis, keripik pangsit renyah, daun sawi, dan mangkuk kuah bening terpisah.">Lihat Detail Menu</button>
+                                    <h5 class="font-weight-bold text-serif card-menu-title">Mie Ayam Biasa</h5>
+                                    <p class="text-muted card-description">Mie kenyal olahan sendiri bertabur tumisan ayam semur cokelat manis dan sawi hijau renyah.</p>
+                                    <button class="btn btn-outline-brown btn-block rounded-pill font-weight-bold btn-menu-detail" data-toggle="modal" data-target="#detailMenuModal" data-nama="Mie Ayam Biasa" data-desc="Mie gandum segar lengkap dengan bumbu semur ayam manis, keripik pangsit renyah, daun sawi, dan mangkuk kuah bening terpisah.">Detail Menu</button>
                                 </div>
                             </div>
                         </div>
@@ -189,45 +175,15 @@
                                     <span class="badge-price">Rp 5.000</span>
                                 </div>
                                 <div class="card-body p-4">
-                                    <h5 class="font-weight-bold text-serif text-dark">Es Teh Manis</h5>
-                                    <p class="text-muted card-description">Kesegaran teh seduh tubruk tradisional pilihan asli untuk melepas dahaga rasa pedas.</p>
-                                    <button class="btn btn-outline-danger btn-block rounded-pill font-weight-bold btn-detail-trigger" data-toggle="modal" data-target="#detailMenuModal" data-nama="Es Teh Manis" data-desc="Es teh jumbo dengan tingkat kemanisan pas menggunakan sirup gula tebu murni pilihan.">Lihat Detail Menu</button>
+                                    <h5 class="font-weight-bold text-serif card-menu-title">Es Teh Manis</h5>
+                                    <p class="text-muted card-description">Kesegaran seduhan daun teh tradisional alami pembasmi dahaga yang sempurna.</p>
+                                    <button class="btn btn-outline-brown btn-block rounded-pill font-weight-bold btn-menu-detail" data-toggle="modal" data-target="#detailMenuModal" data-nama="Es Teh Manis" data-desc="Es teh ukuran jumbo manis alami menggunakan larutan gula tebu asli.">Detail Menu</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- FAQ SECTION DENGAN ACCORDION MODERN -->
-            <div class="my-5 pt-5">
-                <div class="text-center mb-5">
-                    <h3 class="font-weight-bold text-serif">Pertanyaan Seputar Pemesanan</h3>
-                    <div class="title-underline"></div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="accordion" id="faqAccordion">
-                            <div class="card border-0 mb-3 rounded shadow-sm">
-                                <div class="card-header bg-white border-0 py-3" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left text-danger font-weight-bold d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseOne">
-                                            <span>Apakah Bakso Laras menerima pesanan katering / pesta?</span>
-                                            <i class="fas fa-chevron-down text-muted"></i>
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseOne" class="collapse show" data-parent="#faqAccordion">
-                                    <div class="card-body text-muted pt-0">
-                                        Ya, kami menerima pemesanan porsi dalam jumlah besar untuk menyukseskan acara sakral Anda, seperti resepsi pernikahan, arisan keluarga, syukuran rumah, hingga rapat kantor. Silakan diskusikan kebutuhan Anda bersama kami di halaman kontak minimal H-3.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
@@ -236,42 +192,41 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-5 mb-md-0">
-                    <div class="about-img-wrapper position-relative">
-                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?q=80&w=600" class="img-fluid rounded-xl shadow-lg border-gold" alt="Dapur Bakso Laras">
+                    <div class="about-img-wrapper position-relative overflow-hidden rounded-xl shadow-lg border-brown-container">
+                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?q=80&w=600" class="img-fluid about-zoom-img" alt="Dapur Bakso Laras">
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="alert alert-custom-warning d-flex align-items-center py-3 mb-4 rounded-lg" role="alert">
-                        <i class="fas fa-clock fa-lg text-warning mr-3"></i>
+                    <div class="alert alert-custom-brown d-flex align-items-center py-3 mb-4 rounded-lg shadow-sm" role="alert">
+                        <i class="fas fa-clock fa-lg text-success-hint mr-3"></i>
                         <div>
-                            <span class="d-block font-weight-bold text-dark">Jam Operasional Toko</span>
+                            <span class="d-block font-weight-bold text-brown">Jam Operasional Resmi</span>
                             <small class="text-muted">Buka Setiap Hari: 04.00 – 23.00 WIB</small>
                         </div>
                     </div>
-                    <h2 class="font-weight-bold text-serif text-dark mb-3">Tentang Warung BAKSO LARAS</h2>
-                    <p class="lead text-muted mb-4">Membangun cita rasa bakso otentik yang selalu dirindukan masyarakat Kota Pekanbaru.</p>
-                    <p class="text-muted">Berawal dari komitmen keluarga untuk menyajikan makanan sehat, kaya nutrisi, dan murni tanpa pengawet kimia, <strong>BAKSO LARAS</strong> terus konsisten menyajikan bakso bertekstur urat kenyal mantap dan kuah kaldu mendidih yang menggugah selera.</p>
-                    <p class="text-muted">Setiap racikan bumbu kaldu kami dibuat secara segar harian menggunakan perpaduan rempah khas lokal Indonesia, demi menjamin kepuasan bersantap yang sempurna.</p>
+                    <h2 class="font-weight-bold text-serif text-brown mb-3">Tentang Warung BAKSO LARAS</h2>
+                    <p class="lead text-muted mb-4">Cita rasa masakan tradisional nusantara yang menetap erat di hati warga Pekanbaru[span_1](start_span)[span_1](end_span).</p>
+                    <p class="text-muted">Berawal dari komitmen menyajikan hidangan sehat berkuah kaldu cokelat murni kaya rempah, <strong>BAKSO LARAS</strong> selalu setia mempertahankan kesegaran komponen hijau seledri dan sawi segar sebagai penyeimbang gizi kuliner Anda.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ================= HALAMAN KONTAK ================= -->
+    <!-- ================= HALAMAN KONTAK & KATERING ================= -->
     <div id="kontak" class="page-section animate-fade">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title text-serif">Hubungi & Kunjungi Kami</h2>
+                <h2 class="section-title text-serif">Hubungi & Layanan Katering</h2>
                 <div class="title-underline"></div>
             </div>
             <div class="row">
                 <!-- FORM HUBUNGI -->
                 <div class="col-md-6 mb-5">
-                    <div class="card p-4 shadow-sm border-0 rounded-lg">
-                        <h4 class="font-weight-bold mb-4 text-serif text-danger">Form Pertanyaan & Katering</h4>
+                    <div class="card p-4 shadow-sm border-0 rounded-lg h-100">
+                        <h4 class="font-weight-bold mb-4 text-serif text-brown">Form Pemesanan & Saran</h4>
                         <form id="contactForm">
                             <div class="form-group">
-                                <label class="font-weight-bold">Keperluan Layanan</label>
+                                <label class="font-weight-bold text-brown">Keperluan</label>
                                 <select class="form-control rounded-pill custom-input" id="inputKeperluan" required>
                                     <option value="">-- Pilih Keperluan --</option>
                                     <option value="Kritik & Saran">Kritik & Saran</option>
@@ -279,30 +234,55 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bold">Nama Lengkap</label>
-                                <input type="text" class="form-control rounded-pill custom-input" id="inputNama" placeholder="Masukkan nama Anda" required>
+                                <label class="font-weight-bold text-brown">Nama Lengkap</label>
+                                <input type="text" class="form-control rounded-pill custom-input" id="inputNama" placeholder="Nama Anda" required>
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bold">Isi Pesan Detail</label>
-                                <textarea class="form-control custom-input" id="inputPesan" rows="4" style="border-radius:15px;" placeholder="Tulis rincian pertanyaan Anda..." required></textarea>
+                                <label class="font-weight-bold text-brown">Pesan Detail</label>
+                                <textarea class="form-control custom-input" id="inputPesan" rows="3" style="border-radius:15px;" placeholder="Rincian pesan..." required></textarea>
                             </div>
                             <button type="submit" class="btn btn-custom btn-block py-3 rounded-pill font-weight-bold mt-4 shadow-sm" id="btnSubmit">
-                                Kirim Pesan via WhatsApp <i class="fab fa-whatsapp ml-2"></i>
+                                Kirim ke WhatsApp <i class="fab fa-whatsapp ml-2"></i>
                             </button>
                         </form>
                     </div>
                 </div>
 
-                <!-- INFO DETAIL LOKASI -->
+                <!-- FITUR BARU: KALKULATOR SIMULASI HARGA KATERING -->
                 <div class="col-md-6 mb-5">
-                    <div class="card p-4 shadow-sm border-0 rounded-lg h-100 d-flex flex-column justify-content-between">
+                    <div class="card p-4 shadow-sm border-0 rounded-lg bg-brown-light d-flex flex-column justify-content-between h-100">
                         <div>
-                            <h5 class="font-weight-bold text-serif mb-3"><i class="fas fa-map-marker-alt text-danger mr-2"></i> Alamat Warung Fisik</h5>
-                            <p class="text-muted">Jl. Suka Karya, Kelurahan Sialang Munggu, Kec. Tampan, Kota Pekanbaru, Riau 28293</p>
+                            <h4 class="font-weight-bold mb-3 text-serif text-brown"><i class="fas fa-calculator mr-2 text-success-hint"></i>Simulasi Biaya Katering</h4>
+                            <p class="text-muted small">Hitung perkiraan anggaran pesta Anda langsung secara instan di bawah ini.</p>
+                            <hr class="border-brown-light">
+                            <div class="form-group">
+                                <label class="font-weight-bold text-brown small">Pilih Paket Menu</label>
+                                <select class="form-control rounded-pill custom-input-white" id="calcMenu">
+                                    <option value="15000">Bakso Biasa — Rp 15.000 / Porsi</option>
+                                    <option value="22000">Bakso Urat Jumbo — Rp 22.000 / Porsi</option>
+                                    <option value="13000">Mie Ayam Biasa — Rp 13.000 / Porsi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold text-brown small">Jumlah Porsi (Minimal 50)</label>
+                                <input type="number" class="form-control rounded-pill custom-input-white" id="calcJumlah" value="50" min="50">
+                            </div>
                         </div>
-                        
-                        <!-- EMBED GOOGLE MAPS -->
-                        <div class="embed-responsive embed-responsive-16by9 rounded shadow-sm overflow-hidden mt-3">
+                        <div class="p-3 rounded-lg bg-white shadow-inner text-center mt-3 border-left-success">
+                            <span class="text-muted d-block small font-weight-bold">ESTIMASI TOTAL BIAYA</span>
+                            <h3 class="font-weight-bold text-success-hint mb-0" id="calcTotalDisplay">Rp 750.000</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- LOKASI GOOGLE MAPS -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card p-4 shadow-sm border-0 rounded-lg">
+                        <h5 class="font-weight-bold text-serif text-brown mb-3"><i class="fas fa-map-marker-alt text-success-hint mr-2"></i>Lokasi Warung Fisik Pekanbaru</h5>
+                        <p class="text-muted small">Jl. Suka Karya, Kelurahan Sialang Munggu, Kec. Tampan, Kota Pekanbaru, Riau 28293[span_2](start_span)[span_2](end_span)</p>
+                        <div class="embed-responsive embed-responsive-21by9 rounded shadow-sm overflow-hidden map-wrapper">
                             <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6898495610086!2d101.376856!3d0.459871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjcnMzUuNSJOIDEwMcKwMjInMzYuNyJFAA!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
@@ -311,11 +291,11 @@
         </div>
     </div>
 
-    <!-- BOOTSTRAP MODAL PREMIUM -->
+    <!-- BOOTSTRAP MODAL -->
     <div class="modal fade" id="detailMenuModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content border-0 shadow-lg" style="border-radius:20px;">
-                <div class="modal-header bg-danger text-white border-0 py-4 px-4" style="border-top-left-radius:20px; border-top-right-radius:20px;">
+                <div class="modal-header bg-brown text-white border-0 py-4 px-4" style="border-top-left-radius:20px; border-top-right-radius:20px;">
                     <h5 class="modal-title font-weight-bold text-serif" id="modalMenuTitle">Nama Menu</h5>
                     <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -331,23 +311,22 @@
         </div>
     </div>
 
-    <!-- FOOTER ELEGANT -->
+    <!-- FOOTER -->
     <footer class="text-center py-5">
         <div class="container">
-            <div class="mb-4">
+            <div class="mb-3">
                 <a class="navbar-brand text-white font-weight-bold text-serif" href="#">
-                    <i class="fas fa-hotdog text-warning mr-2"></i>BAKSO <span class="text-warning">LARAS</span>
+                    <i class="fas fa-hotdog text-success-hint mr-2"></i>BAKSO <span class="text-success-hint">LARAS</span>
                 </a>
             </div>
-            <p class="mb-2 text-white-50">&copy; 2026 <strong>Bakso Laras</strong>. Seluruh Hak Cipta Dilindungi.</p>
-            <small class="text-muted">Proyek UAS Pemrograman Web Desain 2 — AMIK Mahaputra Riau</small>
+            <p class="mb-1 text-white-50 small">&copy; 2026 <strong>Bakso Laras</strong>. Seluruh Hak Cipta Dilindungi.</p>
+            <small class="text-muted-custom">Proyek UAS Pemrograman Web Desain 2 — AMIK Mahaputra Riau[span_3](start_span)[span_3](end_span)</small>
         </div>
     </footer>
 
-    <!-- Bootstrap 4 & JS Dependencies -->
+    <!-- JS Dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JavaScript Eksternal -->
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
