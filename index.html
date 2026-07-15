@@ -103,7 +103,7 @@
     <div id="menu" class="page-section animate-fade">
         <div class="container">
             
-            <!-- 1. BARU: SLIDE SHOW MENU TERLARIS DI BAGIAN ATAS -->
+            <!-- 1. SLIDE SHOW MENU TERLARIS DI BAGIAN ATAS -->
             <div class="text-center mb-4">
                 <span class="badge badge-warning px-3 py-2 text-dark font-weight-bold shadow-sm mb-2" style="border-radius:20px; font-size: 0.85rem;">
                     <i class="fas fa-fire mr-1 text-danger"></i> PALING BANYAK DICARI
@@ -170,20 +170,24 @@
 
             <hr class="my-5 border-brown-light">
 
-            <!-- 2. DAFTAR UTAMA KATEGORI MENU (TETAP UTUH GRID KAYA DULU) -->
+            <!-- 2. DAFTAR UTAMA KATEGORI MENU -->
             <div class="text-center mb-5">
-                <h3 class="text-serif text-brown font-weight-bold">Semua Daftar Menu Kamar</h3>
+                <h3 class="text-serif text-brown font-weight-bold">Semua Daftar Menu Makanan</h3>
             </div>
             
+            <!-- CODE FIX: Tombol disatukan menjadi Bakso & Mie Ayam -->
             <ul class="nav nav-pills justify-content-center mb-5" id="menuTab" role="tablist">
-                <li class="nav-item"><a class="nav-link active font-weight-bold" id="bakso-tab" data-toggle="pill" href="#bakso" role="tab">Bakso Sapi</a></li>
-                <li class="nav-item"><a class="nav-link font-weight-bold" id="mie-tab" data-toggle="pill" href="#mie" role="tab">Mie Ayam</a></li>
-                <li class="nav-item"><a class="nav-link font-weight-bold" id="minum-tab" data-toggle="pill" href="#minum" role="tab">Minuman Segar</a></li>
+                <li class="nav-item">
+                    <a class="nav-link active font-weight-bold" id="makanan-tab" data-toggle="pill" href="#makanan" role="tab">Bakso & Mie Ayam</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" id="minum-tab" data-toggle="pill" href="#minum" role="tab">Minuman Segar</a>
+                </li>
             </ul>
 
             <div class="tab-content" id="menuTabContent">
-                <!-- KATEGORI BAKSO -->
-                <div class="tab-pane fade show active" id="bakso" role="tabpanel">
+                <!-- KATEGORI MAKANAN (GABUNGAN BAKSO & MIE AYAM) -->
+                <div class="tab-pane fade show active" id="makanan" role="tabpanel">
                     <div class="row">
                         <!-- MENU 1: BAKSO BIASA -->
                         <div class="col-md-4 mb-4">
@@ -199,6 +203,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <!-- MENU 2: BAKSO JUMBO -->
                         <div class="col-md-4 mb-4">
                             <div class="card card-menu shadow-sm">
@@ -213,6 +218,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <!-- MENU 3: BAKSO MERCON -->
                         <div class="col-md-4 mb-4">
                             <div class="card card-menu shadow-sm">
@@ -227,6 +233,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <!-- MENU 4: BASO ACI -->
                         <div class="col-md-4 mb-4">
                             <div class="card card-menu shadow-sm">
@@ -241,13 +248,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- KATEGORI MIE AYAM -->
-                <div class="tab-pane fade" id="mie" role="tabpanel">
-                    <div class="row">
-                        <!-- MENU MIE AYAM -->
+                        <!-- MENU 5: MIE AYAM BIASA (Sekarang berada satu halaman dengan Bakso) -->
                         <div class="col-md-4 mb-4">
                             <div class="card card-menu shadow-sm">
                                 <div class="img-container">
@@ -267,7 +269,7 @@
                 <!-- KATEGORI MINUMAN -->
                 <div class="tab-pane fade" id="minum" role="tabpanel">
                     <div class="row">
-                        <!-- MENU MINUMAN -->
+                        <!-- MENU MINUMAN 1 -->
                         <div class="col-md-4 mb-4">
                             <div class="card card-menu shadow-sm">
                                 <div class="img-container">
@@ -278,6 +280,34 @@
                                     <h5 class="font-weight-bold text-serif card-menu-title">Es Teh Manis</h5>
                                     <p class="text-muted card-description">Kesegaran seduhan daun teh tradisional alami pembasmi dahaga yang sempurna.</p>
                                     <button class="btn btn-outline-brown btn-block rounded-pill font-weight-bold btn-menu-detail" data-toggle="modal" data-target="#detailMenuModal" data-nama="Es Teh Manis" data-desc="Es teh ukuran jumbo manis alami menggunakan larutan gula tebu asli.">Detail Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MENU MINUMAN 2 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card card-menu shadow-sm">
+                                <div class="img-container">
+                                    <img src="jeruk.jpeg" class="card-img-top" alt="Es Jeruk">
+                                    <span class="badge-price">Rp 6.000</span>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="font-weight-bold text-serif card-menu-title">Es Jeruk</h5>
+                                    <p class="text-muted card-description">Kesegaran perasan jeruk asli pilihan yang kaya vitamin C, perpaduan pas manis dan asam untuk melepas dahaga Anda.</p>
+                                    <button class="btn btn-outline-brown btn-block rounded-pill font-weight-bold btn-menu-detail" data-toggle="modal" data-target="#detailMenuModal" data-nama="Es Jeruk" data-desc="Es jeruk segar alami diperas dari buah jeruk pilihan dengan pemanis gula murni.">Detail Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MENU MINUMAN 3 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card card-menu shadow-sm">
+                                <div class="img-container">
+                                    <img src="airputih.jpeg" class="card-img-top" alt="Es Air Putih">
+                                    <span class="badge-price">Rp 4.000</span>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="font-weight-bold text-serif card-menu-title">Es Air Putih</h5>
+                                    <p class="text-muted card-description">Air mineral murni yang disajikan dingin, pilihan paling pas dan netral untuk menetralkan rasa setelah menyantap hidangan.</p>
+                                    <button class="btn btn-outline-brown btn-block rounded-pill font-weight-bold btn-menu-detail" data-toggle="modal" data-target="#detailMenuModal" data-nama="Es Air Putih" data-desc="Air mineral kemasan murni higienis disajikan dingin segar.">Detail Menu</button>
                                 </div>
                             </div>
                         </div>
