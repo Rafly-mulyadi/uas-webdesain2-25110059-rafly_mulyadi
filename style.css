@@ -134,6 +134,29 @@ body {
 .bg-success-light { background-color: rgba(76, 175, 80, 0.12); }
 .bg-brown-light { background-color: var(--light-brown-bg); }
 
+/* KARTU INFO KONTAK CEPAT (WHATSAPP, EMAIL, INSTAGRAM) */
+.contact-info-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(74, 46, 43, 0.03);
+    border: 1px solid rgba(74, 46, 43, 0.06);
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-decoration: none;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(74, 46, 43, 0.08);
+    background-color: #fbf9f4;
+    text-decoration: none;
+}
+
+.contact-info-card .icon-wrapper { width: 60px; height: 60px; }
+.contact-info-card:hover .icon-wrapper { transform: rotate(360deg); }
+
+/* DAFTAR KEUNGGULAN DI BAGIAN TENTANG */
+.about-highlight-list li i { font-size: 1.1rem; }
+
 /* ================= PERBAIKAN WARNA TEKS NAV PILLS (KATEGORI MENU) ================= */
 .nav-pills .nav-link {
     border: 2px solid var(--accent-brown) !important;
@@ -272,3 +295,121 @@ body {
 footer { background-color: var(--primary-brown); color: #fff; border-top: 5px solid var(--success-hint); }
 .bg-brown { background-color: var(--primary-brown); }
 .text-muted-custom { color: #bcaaa4; }
+
+/* ================= FITUR KERANJANG & PEMESANAN ================= */
+.btn-cart-nav {
+    background-color: transparent;
+    border: 2px solid var(--success-hint);
+    color: #f7f5ee;
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.btn-cart-nav:hover {
+    background-color: var(--success-hint);
+    color: #fff;
+}
+.badge-cart-count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    border-radius: 50px;
+    font-size: 0.65rem;
+    padding: 3px 6px;
+    background-color: #d32f2f !important;
+}
+
+.btn-add-cart {
+    background-color: var(--success-green);
+    color: #fff !important;
+    border: none;
+}
+.btn-add-cart:hover {
+    background-color: var(--success-hint);
+    color: #fff !important;
+}
+.btn-add-cart.added {
+    background-color: #2E7D32 !important;
+}
+
+.cart-table th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-top: none;
+    border-bottom: 2px solid var(--light-brown-bg);
+}
+.cart-table td {
+    vertical-align: middle;
+    border-color: var(--light-brown-bg);
+}
+.cart-item-img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 12px;
+}
+.cart-item-name {
+    font-weight: 600;
+    color: var(--primary-brown);
+    font-family: 'Playfair Display', serif;
+}
+
+.qty-stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--light-brown-bg);
+    border-radius: 50px;
+    overflow: hidden;
+}
+.qty-stepper button {
+    background: var(--light-brown-bg);
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    color: var(--primary-brown);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.qty-stepper button:hover { background: var(--success-hint); color: #fff; }
+.qty-stepper .qty-value {
+    width: 34px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.btn-remove-item {
+    background: none;
+    border: none;
+    color: #d32f2f;
+    font-size: 1rem;
+    transition: transform 0.2s;
+}
+.btn-remove-item:hover { transform: scale(1.15); }
+
+.cart-toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: var(--success-green);
+    color: #fff;
+    padding: 14px 22px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    z-index: 2000;
+    font-weight: 600;
+    font-size: 0.9rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.35s ease;
+    pointer-events: none;
+}
+.cart-toast.show { opacity: 1; transform: translateY(0); }
